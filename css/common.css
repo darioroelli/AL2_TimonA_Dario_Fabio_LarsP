@@ -11,8 +11,37 @@
 }
 
 .header {
-  background-color: #ffd7b5;
+  background-color: white;
   height: 100px;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  float: left;
+}
+
+a {
+  display: block;
+  padding: 8px;
+}
+
+.navigation-bar ul {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  display:inline-block;
+  vertical-align:top;
 }
 
 .content {
