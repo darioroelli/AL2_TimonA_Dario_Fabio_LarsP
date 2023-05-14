@@ -53,7 +53,7 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  line-height: 60px;
+  line-height: 55px;
   margin: 0 5px;
 }
 
@@ -104,29 +104,39 @@ a.active, a:hover {
   display: none;
 }
 
-#check {
+#click {
   display: none;
 }
 
 @media (max-width: 858px) {
   .hamburger {
     display: block;
+    color: var(--lila);
+  }
+
+  #click:checked ~ .hamburger i:before {
+    content: "\f00d";
+  }
+
+  #button-online-shop {
+    top: 50px;
   }
 
   ul {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: blue;
-    top: 80px;
-    left: 0;
+    background-color: var(--grey);
+    color: var(--white);
+    top: 125px;
+    left: -100%;
+    padding-top: 100px;
     text-align: center;
   }
 
   nav ul li {
     display: block;
-    margin: 50px 0;
-    line-height: 30px;
+    margin: 10px 0;
   }
 
   nav ul li a {
@@ -135,18 +145,19 @@ a.active, a:hover {
 
   a.hover, a.active {
     background: none;
-    color: yellow;
   }
 
-  #check:checked ~ ul {
-    left: 0;
+  #click:checked ~ ul {
+    left: 0%;
+    transition: all 0.3s ease;
   }
 }
 
 .logo {
-  width: 125px;
+  width: 200px;
   height: auto;
-  margin-right: 25px;
+  margin-right: 75px;
+  padding-top: 6px;
   float: left;
 }
 
@@ -205,11 +216,12 @@ footer {
 @media only screen and (max-width: 550px) {
   .container {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+    grid-template-rows: 0.4fr 0fr 0fr 0fr 1fr;
     grid-template-areas:
-    "nav"
-    "main"
-    "content1"
+    "header"
+    "section1"
+    "section2"
+    "section3"
     "footer"
   }
 }
