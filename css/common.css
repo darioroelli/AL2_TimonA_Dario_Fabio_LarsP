@@ -23,12 +23,13 @@ body {
   min-height:100vh;
   min-height:100dvh;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.2fr 0fr 0fr 0fr 0.8fr;
+  grid-template-rows: 0.2fr 0fr 0fr 0fr 0fr 0.8fr;
   grid-template-areas: 
     "header header header header"
     "section1 section1 section1 section1"
     "section2 section2 section2 section2"
     "section3 section3 section3 section3"
+    "section4 section4 section4 section4"
     "footer footer footer footer";
 }
 
@@ -205,6 +206,19 @@ a.active, a:hover {
   padding: 100px 0px 100px 0px;
 }
 
+.section4-container {
+  grid-area: section4;
+  padding: var(--main-padding);
+  background-color: var(--white);
+  color: var(--darkblue);
+}
+
+.section4 {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 100px 0px 100px 0px;
+}
+
 
 #content1 {
   background-color: var(--white);
@@ -237,6 +251,7 @@ h1 {
   font-size: 62px;
   line-height: 1.2;
   margin-bottom: 40px;
+  word-break: normal;
 }
 
 h2 {
@@ -244,6 +259,7 @@ h2 {
   font-weight: 600;
   font-size: 36px;
   line-height: 1.2;
+  word-break: normal;
 }
 
 h3 {
@@ -251,6 +267,7 @@ h3 {
   font-weight: 500;
   font-size: 18px;
   margin-bottom: 40px;
+  word-break: normal;
 }
 
 p {
@@ -259,6 +276,7 @@ p {
   font-size: 18px;
   line-height: 1.4;
   color: #425466;
+  word-break: normal;
 }
 
 .lightblue {
