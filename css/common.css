@@ -48,7 +48,7 @@ nav span {
 }
 
 nav ul {
-  float: left;
+  float: right;
 }
 
 nav ul li {
@@ -80,7 +80,6 @@ a.active, a:hover {
   font-family: "Graphik", sans-serif;
   color: white;
   border-radius: 100px;
-  float: right;
   cursor: pointer;
 }
 
@@ -92,6 +91,7 @@ a.active, a:hover {
 
 #button-online-shop {
   margin-top: 8px;
+  margin-left: 22px;
 }
 
 .hamburger {
@@ -150,6 +150,11 @@ a.active, a:hover {
   #click:checked ~ ul {
     left: 0%;
     transition: all 0.3s ease;
+  }
+
+  #button-online-shop {
+    margin-top: 16px;
+    margin-left: 0px;
   }
 }
 
