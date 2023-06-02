@@ -1,0 +1,81 @@
+/* CSS Code, den es für die Promotion Page braucht */
+
+.hidden {
+    display: none;
+}
+
+#errorMessage {
+    color: red;
+    height: 20px;
+  }
+
+  label {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Graphik", sans-serif;
+  }
+
+  .datenschutz {
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+
+  /* Styling Input-Felder */
+  input[type=text], select {
+    width: 100%;
+    padding: 16px 16px;
+    margin-bottom: 25px;
+    border: none;
+    margin-top: 12px;
+    display: inline-block;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-family: "Graphik", sans-serif;
+  }
+
+    /* Styling Input-Felder */
+    input[type=email], select {
+      width: 100%;
+      padding: 16px 16px;
+      margin-bottom: 25px;
+      border: none;
+      margin-top: 12px;
+      display: inline-block;
+      border-radius: 6px;
+      box-sizing: border-box;
+      font-family: "Graphik", sans-serif;
+    }
+
+  /* Styling Input-Felder */
+  input[type=tel] {
+    width: 100%;
+    padding: 16px 16px;
+    margin-bottom: 25px;
+    margin-top: 12px;
+    border: none;
+    display: inline-block;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-family: "Graphik", sans-serif;
+  }
+  
+  /* Styling Submit-Button */
+  input[type=submit] {
+    width: 100%;
+    background-color: var(--lila);
+    color: white;
+    padding: 16px 16px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Graphik", sans-serif;
+  }
+  
+  /* Hintergrundfarbe Submit-Button */
+  input[type=submit]:hover {
+    background-color: var(--lightblue);
+    color: var(--darkblue);
+  }
