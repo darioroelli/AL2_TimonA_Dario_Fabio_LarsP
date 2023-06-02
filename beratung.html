@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beratung – SmartTech</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/beratung.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/png" href="images/smarttech-favicon.png"/>
+</head>
+<body>
+<header>
+    <div class="header">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/smarttech-logo.png" alt="Logo">
+        </a>
+      </div>
+      <nav>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon"><i class="fa solid fa-bars"></i></label>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="beratung.html">Beratung</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li class="button"><a href="shop.html">Online-Shop</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="box">
+        <form>
+            <label for="fname">Vorname</label>
+            <input type="text" id="fname" name="firstname" placeholder="Vorname eingeben..." required>
+                        
+            <label for="lname">Nachname</label>
+            <input type="text" id="lname" name="lastname" placeholder="Nachname eingeben..." required>
+
+            <label for="email">E-Mail-Adresse</label>
+            <input type="email" id="email" name="email" placeholder="E-Mail-Adresse eingeben..." required>   
+
+            <label for="phone">Telefon</label>
+            <input type="tel" id="phone" name="phone" placeholder="Telefonnummer eingeben..." required>           
+                        
+            <label for="time">Zeit für Online-Meeting</label>
+            <select id="time" name="time" required>
+              <option value="8">08:00 Uhr</option>
+              <option value="10">10:00 Uhr</option>
+              <option value="14">14:00 Uhr</option>
+              <option value="16">16:00 Uhr</option>
+              <option value="18">18:00 Uhr</option>
+            </select>
+            
+            <label for="privacy">Ich verstehe und akzeptiere den Hinweis zum Datenschutz.</label>
+            <input type="checkbox" id="privacy" name="privacy" class="datenschutz" required>
+        
+            <input type="submit" value="Kostenlose Beratung buchen">
+          </form>
+    </div>
+    <div class="box">
+      <h2>Box 1</h2>
+    </div>
+    <div class="box">
+      <h2>Box 1</h2>
+    </div>
+    <div class="box">
+      <h2>Box 1</h2>
+    </div>
+    <div class="box">
+      <h2>Box 1</h2>
+    </div>
+    <div class="box">
+      <h2>Box 1</h2>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer">
+      <div class="column">
+        <h2>Spalte 1</h2>
+      </div>
+      <div class="column">
+        <h2>Spalte 2</h2>
+      </div>
+      <div class="column">
+        <h2>Spalte 3</h2>
+      </div>
+      <div class="column">
+        <h2>Spalte 4</h2>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/common.js"></script>
+  <script src="js/forms.js"></script>
+
+</body>
+</html>
