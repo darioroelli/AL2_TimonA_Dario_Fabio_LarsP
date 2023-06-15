@@ -1,0 +1,606 @@
+/* Promotion */
+
+.container-teaser {
+  background: var(--lila)
+}
+  
+.teaser {
+  max-width: 1220px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+  padding: 75px 30px 80px 30px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.teaser h2 {
+  color: var(--white);
+}
+
+/* FAQ */
+
+.hintergrund-faq {
+  background: var(--white)
+}
+  
+.container-faq {
+  max-width: 1220px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+  padding: 95px 30px 80px 30px;
+  text-align: left;
+}
+
+.toggle {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.toggle::after {
+  content: '+';
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: var(--white);
+  transition: transform 0.3s ease;
+}
+
+.toggle.active::after {
+  content: '-';
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: var(--white);
+}
+  
+.toggle h3 {
+  cursor: pointer;
+  margin: 0;
+  padding: 12px 50px 12px 20px;
+  background-color: var(--lila);
+  color: var(--white);
+}
+
+.toggle h3:hover {
+  background-color: var(--darkblue);
+  color: var(--white);
+}
+  
+.toggle .answer {
+  padding: 20px 20px 20px 20px;
+  background: none;
+  color: var(--darkblue);
+  display: none;
+}
+
+.toggle.active .answer {
+  display: block;
+}
+
+  /* Bewertungen */
+
+.container-bewertungen {
+  max-width: 1220px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  padding: 100px 30px 100px 30px;
+}
+
+.bewertung {
+  padding: 50px 50px 50px 50px;
+  box-shadow: rgba(187, 187, 187, 0.2) 0px 2px 30px;
+  border-radius: 12px;
+  border: 1px solid #ebebebdd;
+  transition: all 0.3s ease;  
+}
+
+.container-bewertungen .fa {
+  color: var(--lila);
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.bewertung:hover {
+  transform: scale(1.02);
+}
+
+@media only screen and (max-width: 950px) {
+  /* Tablets */
+  .container-bewertungen {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.testimonial {
+  margin-bottom: 10px;
+}
+  
+.star {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: yellow;
+  margin-right: 2px;
+}
+  
+.profilbild img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+/* Produkt Gallerie */
+
+.container-produktgallerie {
+  max-width: 1220px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  padding: 100px 30px 100px 30px;
+}
+
+.produkt {
+  padding: 50px 50px 50px 50px;
+  background: #f3f2ff;
+  border-radius: 12px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.produkt-box:hover {
+  transform: scale(1.02);
+  background: #dfdbff;
+}
+
+@media only screen and (max-width: 950px) {
+  /* Tablets */
+  .container-produktgallerie {
+      grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.produkt-photo {
+  width: 100px;
+  height: auto;
+}
+
+.preis {
+  margin-bottom: 25px;
+}
+
+.container-produktgallerie h3 {
+  margin-bottom: 15px;
+  margin-top: 18px;
+}
+
+/* Formular */
+
+.form{
+  text-align: left;
+  margin-top: 10%;
+}
+
+.form-group-names{
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+}
+
+.abstandvorname{
+  flex: 1;
+  padding-right: 10px;
+}
+
+.abstandnachname{
+  flex: 1;
+  padding-left: 10px;
+}
+
+.form-group{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.error-message{
+  margin-top: -20px;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  color: red;
+  line-height: 1.4;
+}
+
+option{
+max-width: 100%;
+padding: 16px 20px;
+border: 1px;
+background-color: #00d4ff;
+}
+
+
+/* Styling Input-Felder */
+input[type=text], select {
+width: 100%;
+padding: 16px 16px;
+margin-bottom: 25px;
+background-color: #F6F9FC;
+margin-top: 12px;
+display: inline-block;
+border: none; /* Border entfernt */
+border-radius: 6px;
+box-sizing: border-box;
+font-family: "Graphik", sans-serif;
+}
+
+
+
+input[type=email], select {
+width: 100%;
+padding: 16px 16px;
+margin-bottom: 25px;
+background-color: #F6F9FC;
+margin-top: 12px;
+display: inline-block;
+border: none; /* Border entfernt */
+border-radius: 6px;
+box-sizing: border-box;
+font-family: "Graphik", sans-serif;
+}
+
+
+/* Styling Submit-Button */
+input[type=submit] {
+  width: 50%;
+  background-color: var(--lila);
+  color: white;
+  padding: 16px 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 5%;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Graphik", sans-serif;
+}
+
+#inputhighscore{
+  width: 48%;
+  border: none;
+}
+
+input[type=text]:focus, select:focus {
+border: 2px solid #0a2540;
+outline: none;
+}
+
+input[type=email]:focus, select:focus {
+border: 2px solid #0a2540;
+outline: none;
+}
+
+/* Hintergrundfarbe Submit-Button */
+input[type=submit]:hover {
+  background-color: var(--lightblue);
+  color: var(--darkblue);
+}
+
+/* Hilfsklasse */
+.hidden {
+  display: none;
+}
+
+/* Spiel-Container mit Beschreibung und Game-Over Text */
+
+#game {
+  position: relative;
+  height: 300px;
+  cursor: pointer;
+}
+
+.game-info {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+#game-end {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+#game-winner {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+/* Elemente im Spiel */
+#game-background {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background-image: url("../images/background.png");
+  background-size: contain;
+}
+
+.bg-animation {
+  animation: moveBg 10.33s linear infinite;
+}
+
+@keyframes moveBg {
+  0% {
+      background-position: 0 0;
+  }
+
+  100% {
+      background-position: -600px 0;
+  }
+}
+
+#game-dino {
+  height: 75px;
+  width: 75px;
+  top: 225px;
+  position: relative;
+  background-image: url("../images/smartphone.png");
+  background-size: cover;
+}
+
+.dino-dies {
+  background-image: url("../images/gameend.png");
+}
+
+#game-rock {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 175px;
+  left: 550px;
+  background-image: url("../images/rock.png");
+  background-size: cover;
+}
+
+.rock-animation {
+  animation: rock 1.33s infinite;
+}
+
+@keyframes rock {
+  0% {
+      left: 550px;
+  }
+
+  100% {
+      left: -50px;
+  }
+}
+
+.jump-animation {
+  animation: jump 0.5s;
+}
+
+@keyframes jump {
+  0% {
+      top: 225px;
+  }
+
+  50% {
+      top: 75px;
+  }
+
+  75% {
+      top: 75px;
+  }
+
+  100% {
+      top: 225px;
+  }
+}
+
+#game-start {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.7;
+  background: black;
+}
+
+#game-score {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 12px;
+  color: transparent;
+}
+
+#game-level{
+  display: inline-block;
+  color: #635bff;
+}
+
+#gamelevelinfo{
+  color: #635bff;
+}
+
+.btngame {
+display: inline-block;
+font-size: 18px;
+border: none;
+color: #ffffff;
+cursor: pointer;
+text-decoration: none;
+font-family: "Poppins", sans-serif;
+background-color: var(--lila);
+padding: 14px 18px;
+border-radius: 6px;
+transition: background-color 0.3s ease;
+margin-left: 38%;
+margin-top: 20%;
+}
+
+.btngame:hover {
+background-color: var(--darkblue);
+}
+
+#game-score-info{
+text-align: center;
+margin: 30px 30px 30px 30px;
+}
+
+.highscore2{
+margin-top: -40px;
+}
+
+#h2score {
+  margin-bottom: 50px;
+}
+
+#current-score {
+  color: var(--lila);
+}
+
+@media only screen and (max-width: 1283px){
+#game-background{
+  max-width: 100%;
+  }
+
+#game-rock{
+  left: 480px;
+}
+}
+
+
+@media only screen and (max-width: 1283px){
+#game-rock{
+  left: 490px;
+}
+}
+
+  @media only screen and (max-width: 1176px){
+#game-rock{
+  left: 440px;
+}
+}
+
+
+    @media only screen and (max-width: 1058px){
+#game-rock{
+  left: 385px;
+}
+}
+
+
+@media only screen and (max-width: 950px) {
+  /* Tablets */
+  .container-dreispaltig {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #game-start{
+      width: 600px;
+  }
+
+  #game-background {
+      position: absolute;
+      width: 600px;
+      height: 300px;
+      background-image: url("../images/background.png");
+      background-size: cover;
+  }
+
+  #game-rock {
+      width: 50px;
+      height: 50px;
+      position: relative;
+      top: 175px;
+      left: 500px;
+      background-image: url("../images/rock.png");
+      background-size: cover;
+}
+  }
+
+
+  @media only screen and (max-width: 660px){
+      #game-start{
+          width: 100%;
+  }}
+
+
+  @media only screen and (max-width: 660px){
+      #game-rock{
+          left: 460px;
+      }
+  }
+
+  @media only screen and (max-width: 569px){
+      #game-rock{
+          left: 420px;
+      }
+  }
+
+  @media only screen and (max-width: 531px){
+      #game-rock{
+          left: 380px;
+      }
+
+      .btngame{
+          margin-left: 36%;
+      }
+  }
+
+  @media only screen and (max-width: 489px){
+      #game-rock{
+          left: 340px;
+      }
+  }
+
+  @media only screen and (max-width: 449px){
+      #game-rock{
+          left: 300px;
+      }
+  }
+
+  @media only screen and (max-width: 419px){
+      #game-rock{
+          left: 270px;
+      }
+  }
+
+  @media only screen and (max-width: 359px){
+      #game-rock{
+          left: 250px;
+      }
+  }
+
+/* Video */
+
+#video-container {
+      width: 100%;
+      height: auto;
+    }
+    
+    video {
+      width: 100%;
+      height: auto;
+      object-fit: fill;
+    }
