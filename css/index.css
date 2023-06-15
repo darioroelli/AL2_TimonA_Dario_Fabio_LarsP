@@ -1,0 +1,91 @@
+/* Promotion-Teaser Home */
+
+.container-teaser-home {
+  background: var(--lila)
+}
+  
+.teaser-home {
+  max-width: 1220px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+  padding: 75px 30px 80px 30px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+.teaser-home h2 {
+  color: var(--white);
+}
+
+/* FAQ */
+
+.hintergrund-faq {
+  background: var(--white)
+}
+  
+.container-faq {
+  max-width: 1220px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+  padding: 95px 30px 80px 30px;
+  text-align: left;
+}
+
+.toggle {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.toggle::after {
+  content: '+';
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: var(--white);
+  transition: transform 0.3s ease;
+}
+
+.toggle.active::after {
+  content: '-';
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: var(--white);
+}
+  
+.toggle h3 {
+  cursor: pointer;
+  margin: 0;
+  padding: 12px 50px 12px 20px;
+  background-color: var(--lila);
+  color: var(--white);
+}
+
+.toggle h3:hover {
+  background-color: var(--darkblue);
+  color: var(--white);
+}
+  
+.toggle .answer {
+  padding: 20px 20px 20px 20px;
+  background: none;
+  color: var(--darkblue);
+  display: none;
+}
+
+.toggle.active .answer {
+  display: block;
+}
